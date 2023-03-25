@@ -8,6 +8,7 @@ This is a simple CRUD (Create, Read, Update, Delete) application for blog posts.
 - Edit existing blog post
 - Delete blog post
 - View list of all blog posts
+- The page is fully responsive and fits all kinds of screen sizes
 
 ## Technologies Used
 
