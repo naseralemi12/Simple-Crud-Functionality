@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>BLOG POSTS</h1>
+    <button id="addButton">Add Blog Post</button>
+    <dialog id="dialogBox">
+        <form method="dialog" autocomplete="off">
+            <p><label for="title">Blog Title :
+            <input type="text" id="title" name="title" width="16ch">
+          </label></p>
+            <p><label for="date">Blog Date : <input type="date" id="date" name="date" width="20ch"></label></p>
+            <p><label style="float:left" for="summary">Summary :&nbsp </label><textarea rows="3" cols="20" id="summary" name="summary"></textarea></p>
+            <div>
+                <button id="saveButton" onclick="onFormSubmit();" value="submit" type="submit">Save</button>
+                <button id="cancelButton" value="cancel" type="button">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="deleteDialog">
+        <form method="dialog">
+            <h4>Are you sure that you want to delete this blog post?</h4>
+            <button type="submit" value="Canceled!">Cancel</button>
+            <button id="deleteButton" type="submit" value="Delete">Delete</button>
+        </form>
+    </dialog>
+
+    <div class="BlogPostTable">
+        <table class="list" id="blogList">
+            <thead>
+                <tr>
+                    <th class="headers">Blog Title</th>
+                    <th class="headers">Blog Date</th>
+                    <th class="headers">Blog Summary</th>
+                    <th class="headers">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

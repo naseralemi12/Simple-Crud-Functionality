@@ -1,0 +1,294 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #0062cc;
+}
+
+
+/* Dialog Box Styles */
+
+dialog {
+    margin: 0;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 30rem;
+    z-index: 1;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#summary {
+    resize: none;
+    height: 6rem;
+}
+
+button[value="submit"],
+button[value="cancel"] {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+button[value="submit"]:hover,
+button[value="cancel"]:hover {
+    background-color: #0062cc;
+}
+
+
+/* Delete Dialog Box Styles */
+
+#deleteDialog {
+    margin: 0;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 30rem;
+    z-index: 1;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+#deleteDialog h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#deleteDialog button {
+    padding: 0.5rem 1rem;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+#deleteDialog button:hover {
+    background-color: #c82333;
+}
+
+
+/* Blog Post Table Styles */
+
+.BlogPostTable {
+    margin: 2rem;
+}
+
+.list {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.headers {
+    font-weight: bold;
+    text-align: left;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.list td,
+.list th {
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+}
+
+.list tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.list tr:hover {
+    background-color: #e2e6ea;
+}
+
+.list .actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list .actions button {
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.list .actions button:hover {
+    color: #0056b3;
+}
+
+
+/* Media Queries for Responsive Design */
+
+
+/* Mobile Devices */
+
+@media (max-width: 767px) {
+    /* Global Styles */
+    h1 {
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 0.9rem;
+    }
+    /* Dialog Box Styles */
+    dialog {
+        width: 100%;
+        max-width: none;
+    }
+    /* Delete Dialog Box Styles */
+    #deleteDialog {
+        width: 100%;
+        max-width: none;
+    }
+    /* Blog Post Table Styles */
+    .BlogPostTable {
+        margin: 1rem;
+    }
+    .list {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Tablets */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Global Styles */
+    h1 {
+        font-size: 1.8rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+    /* Dialog Box Styles */
+    dialog {
+        width: 80%;
+        max-width: none;
+    }
+    /* Delete Dialog Box Styles */
+    #deleteDialog {
+        width: 80%;
+        max-width: none;
+    }
+    /* Blog Post Table Styles */
+    .BlogPostTable {
+        margin: 1rem;
+    }
+    .list {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Desktops */
+
+@media (min-width: 1024px) {
+    /* Global Styles */
+    h1 {
+        font-size: 2rem;
+    }
+    button {
+        font-size: 1.2rem;
+    }
+    /* Dialog Box Styles */
+    dialog {
+        width: 50%;
+        max-width: none;
+    }
+    /* Delete Dialog Box Styles */
+    #deleteDialog {
+        width: 50%;
+        max-width: none;
+    }
+    /* Blog Post Table Styles */
+    .BlogPostTable {
+        margin: 2rem;
+    }
+    .list {
+        font-size: 1rem;
+    }
+}
