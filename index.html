@@ -13,11 +13,18 @@
     <button id="addButton">Add Blog Post</button>
     <dialog id="dialogBox">
         <form method="dialog" autocomplete="off">
-            <p><label for="title">Blog Title :
-            <input type="text" id="title" name="title" width="16ch">
-          </label></p>
-            <p><label for="date">Blog Date : <input type="date" id="date" name="date" width="20ch"></label></p>
-            <p><label style="float:left" for="summary">Summary :&nbsp </label><textarea rows="3" cols="20" id="summary" name="summary"></textarea></p>
+            <p>
+                <label for="title">Blog Title :</label>
+                <input type="text" id="title" name="title" style="width: 16ch;">
+            </p>
+            <p>
+                <label for="date">Blog Date :</label>
+                <input type="date" id="date" name="date" style="width: 20ch;">
+            </p>
+            <p>
+                <label style="float:left" for="summary">Summary :&nbsp;</label>
+                <textarea rows="3" cols="20" id="summary" name="summary"></textarea>
+            </p>
             <div>
                 <button id="saveButton" onclick="onFormSubmit();" value="submit" type="submit">Save</button>
                 <button id="cancelButton" value="cancel" type="button">Cancel</button>
