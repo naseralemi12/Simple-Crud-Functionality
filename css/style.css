@@ -292,3 +292,23 @@ button[value="cancel"]:hover {
         font-size: 1rem;
     }
 }
+
+
+/* Style for the footer */
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Media query for small screens */
+
+@media only screen and (max-width: 600px) {
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
