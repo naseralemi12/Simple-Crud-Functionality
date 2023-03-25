@@ -2,6 +2,10 @@
 
 This is a simple CRUD (Create, Read, Update, Delete) application for blog posts. It allows the user to add, edit, and delete blog posts, and view a list of all posts.
 
+## Page Link
+
+- <https://lively-peony-f558d2.netlify.app/>
+
 ## Features
 
 - Add new blog post with title, date, and summaryEdit an existing blog post
