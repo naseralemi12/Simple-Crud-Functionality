@@ -4,11 +4,11 @@ This is a simple CRUD (Create, Read, Update, Delete) application for blog posts.
 
 ## Features
 
-- Add new blog post with title, date, and summary
-- Edit existing blog post
+- Add new blog post with title, date, and summaryEdit an existing blog post
 - Delete blog post
 - View list of all blog posts
 - The page is fully responsive and fits all kinds of screen sizes
+- Adding, editing, and deleting blog posts reflect the browser's local storage as well so your data will be available even if you are offline or close the browser and come back later.
 
 ## Technologies Used
 
