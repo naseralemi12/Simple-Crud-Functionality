@@ -29,7 +29,7 @@ This is a simple CRUD (Create, Read, Update, Delete) application for blog posts.
 
 ## Contributors
 
-- Your Name <naseralemi12@gmail.com>
+- Adam Alemi <naseralemi12@gmail.com>
 
 ## Screenshots
 
